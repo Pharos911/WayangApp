@@ -1,5 +1,12 @@
 # Wayang App | Indonesian puppet type classification application
 
+<br />
+<p align="center">
+  <a href="https://github.com/Pharos911/WayangApp">
+    <img src="gambar/ikon.png" alt="Logo" width="200" height="200">
+  </a>
+
+
 ## About
 Wayang App is a wayang classification and information application. This application provides information about wayang as an Indonesian culture, with a focus on the categories of Wayang Beber, Wayang Gedog, Wayang Golek, Wayang Krucil, Wayang Kulit, and Wayang Suluh. This application is an interactive and innovative guide for wayang enthusiasts, students of traditional arts, and anyone wishing to explore Indonesia's rich heritage. 
 
