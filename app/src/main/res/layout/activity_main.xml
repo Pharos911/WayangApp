@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginBottom="400dp"
+            android:src="@drawable/mandala_menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_info"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:cornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/info" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Selamat Datang"
+            android:textColor="#7B4310"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/welcome_subtext"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/tv_welcome"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_startLearnBanner"
+            android:layout_width="420dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/m_banner"
+            app:riv_corner_radius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_startLearningWayang"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="23dp"
+            android:text="@string/learn_btn"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/iv_startLearnBanner"
+            app:layout_constraintEnd_toEndOf="@+id/iv_startLearnBanner"
+            app:layout_constraintTop_toTopOf="@id/iv_startLearnBanner"
+            app:rippleColor="@color/white"
+            app:strokeColor="@color/white" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_ScanFromCamera"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintEnd_toStartOf="@id/btn_ScanFromGallery"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_startLearnBanner">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="@string/start_classify_wayang"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/scanIcon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <ImageView
+                    android:id="@+id/scanIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_outline_photo_camera_24_black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_ScanFromGallery"
+            android:layout_width="65dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_ScanFromCamera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_ScanFromCamera"
+            app:layout_constraintTop_toTopOf="@+id/btn_ScanFromCamera">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/ic_outline_image_search_24_black" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/teks_wayang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/wayang"
+            android:textColor="#7B4310"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_ScanFromCamera" />
+
+        <ImageView
+            android:id="@+id/icon_gunungan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gunungan_menu"
+            app:layout_constraintLeft_toRightOf="@id/teks_wayang"
+            app:layout_constraintBottom_toBottomOf="@+id/teks_wayang"
+            app:layout_constraintTop_toTopOf="@id/teks_wayang">
+        </ImageView>
+
+        <HorizontalScrollView
+            android:id="@+id/h_scrollview0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="@id/teks_wayang"
+            app:layout_constraintStart_toStartOf="@id/teks_wayang"
+            app:layout_constraintTop_toBottomOf="@id/teks_wayang">
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_beber"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_beber" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_gedog"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_gedog" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_golek"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_golek" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_kulit"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_kulit" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_krucil"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_krucil" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mwayang_suluh"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_wayang_suluh" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/info_tambahan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/more_knowledge"
+            android:textColor="#7B4310"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h_scrollview0" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/h_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="@id/info_tambahan"
+            app:layout_constraintStart_toStartOf="@id/info_tambahan"
+            app:layout_constraintTop_toBottomOf="@id/info_tambahan">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mdalang"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_dalang" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mmuseum_studio"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_museum_studio" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mcerita_wayang"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_ceritawayang" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/mvideo_wayang"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginEnd="10dp"
+                    app:riv_corner_radius="15dp"
+                    android:background="@drawable/ripple_effect"
+                    android:src="@drawable/m_videowayang" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

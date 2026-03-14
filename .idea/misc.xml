@@ -1,0 +1,24 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_dalang_bio.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_detail.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_info_app.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_learn_wayang.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_stories.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_studio_museum.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_video.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_wayang_camera.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/activity_wayang_detail.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/item_dalang.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/item_museum_cerita_video.xml" value="0.264" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/layout/item_slide.xml" value="0.13043478260869565" />
+        <entry key="..\:/Farros Ammar A/Wayang App/app/src/main/res/xml/root_preferences.xml" value="0.2078804347826087" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK" />
+</project>
