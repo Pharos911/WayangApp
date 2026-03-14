@@ -4,7 +4,8 @@
 <p align="center">
   <a href="https://github.com/Pharos911/WayangApp">
     <img src="gambar/ikon.png" alt="Logo" width="200" height="200">
-  </a>
+  </a>  
+</br>
 
 
 ## About
