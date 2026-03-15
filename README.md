@@ -17,6 +17,11 @@ Wayang App is a wayang classification and information application. This applicat
 
 This application is also part of the final project "APPLICATION OF CONVOLUTIONAL NEURAL NETWORK METHOD IN THE DEVELOPMENT OF AN ANDROID-BASED WAYANG TYPE CLASSIFICATION APPLICATION" at Gunadarma University.
 
+## Wayang Content References
+```
+https://www.kaggle.com/datasets/gibranfadilla/indonesian-wayang-types
+```
+
 ## App Overview
 <p float="left">
   <img src="README Wayang App/Gambar/homepage.png" width="270" height="540">
